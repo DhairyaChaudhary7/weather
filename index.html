@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+            <h1>🌦 Weather App</h1>
+
+            <button id="theme-btn">🌙</button>
+        </div>
+
+        <div class="search-box">
+
+            <input
+            type="text"
+            id="city"
+            placeholder="Enter city name">
+
+            <button onclick="getWeather()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button onclick="startVoice()">
+                🎤
+            </button>
+
+        </div>
+
+        <button class="location-btn"
+        onclick="getLocationWeather()">
+            📍 Current Location
+        </button>
+
+        <div class="weather-box">
+
+            <img id="weather-icon" src="" alt="">
+
+            <h2 id="temp">--°C</h2>
+
+            <h3 id="city-name">City Name</h3>
+
+            <p id="weather-type">Weather</p>
+
+            <div class="details">
+
+                <div>
+                    <h4>Humidity</h4>
+                    <p id="humidity">--%</p>
+                </div>
+
+                <div>
+                    <h4>Wind</h4>
+                    <p id="wind">-- km/h</p>
+                </div>
+
+            </div>
+
+            <div class="aqi-box">
+                <h3>Air Quality Index</h3>
+                <p id="aqi">--</p>
+            </div>
+
+        </div>
+
+        <div>
+            <h2 class="forecast-title">
+                Hourly Forecast
+            </h2>
+
+            <div id="forecast"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
