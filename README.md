@@ -9,3 +9,4 @@ Features:
 - AQI
 - Hourly Forecast
 - Dark Mode
+https://dhairyachaudhary7.github.io/weather/
